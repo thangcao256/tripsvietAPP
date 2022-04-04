@@ -120,7 +120,12 @@ Chức năng cho phép người dùng có thể tùy chọn giao diện sáng ho
     
 ![tripsviet](https://i.ibb.co/kyLkxm3/18.jpg)
 
+## Video Demo
+{@vimeo: https://www.youtube.com/watch?v=C0LdAo1WhAU}
+
+
 # TripsViet - Ứng dụng review du lịch Việt Nam
+
 
 
     
