@@ -1,5 +1,5 @@
 # TripsViet - Ứng dụng review du lịch Việt Nam
-![tripsvietlogo](https://i.ibb.co/1mSZ0Jr/1024.png)
+![tripsvietlogo](https://i.ibb.co/XxVB8ry/1024.png)
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
 AngularJS-powered HTML5 Markdown editor.
