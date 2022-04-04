@@ -1,188 +1,122 @@
 # TripsViet - Ứng dụng review du lịch Việt Nam
-![tripsvietlogo](https://i.ibb.co/XxVB8ry/1024.png)
+![tripsviet](https://i.ibb.co/XxVB8ry/1024.png)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+Đây là ứng dụng Mobile mình viết - phục vụ cho đồ án Chuyên ngành Công nghệ thông tin
+Công cụ, Ngôn ngữ sử dụng:
+* Java
+* Firebase (Authentication & Realtime Database)
+* PHP
+* MySQL
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+## Chức năng đăng nhập
+    Đây là màn hình khởi động của Ứng dụng TRIPSVIET
+    
+![tripsviet](https://i.ibb.co/r2HqvVW/1.jpg)
 
-## Features
+    Màn hình giới thiệu được xuất hiện, khi ứng dụng được cài đặt lần đầu tiên trên thiết bị. Lần truy cập ứng dụng thứ hai sẽ được bỏ qua, nếu người dùng đã đăng xuất tài
+    khoản khỏi ứng dụng.
+    
+![tripsviet](https://i.ibb.co/2qky2Kt/2.jpg)
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+    Chức năng đăng nhập yêu cầu người dùng nhập số điện thoại và mật khẩu đã đăng ký để
+    xác thực đăng nhập. Người dùng có thể ghi nhớ đăng nhập cho lần sử dụng tiếp theo. Bên cạnh đó, ứng dụng hỗ trợ người dùng có thể đăng ký tài khoản mới hoặc tìm lại mật khẩu cho tài khoản đã đăng ký trước đó.
+    
+![tripsviet](https://i.ibb.co/CKfVthY/3.jpg)
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+    Ở chức năng đăng ký tài khoản, ứng dụng yêu cầu người dùng xác thực số điện thoại dùng để đăng ký bằng mã OPT.
+* Nếu số điện thoại đã được đăng ký trước đó, ứng dụng cho phép người dùng lấy lại mật khẩu cũ hoặc trở về trang đăng nhập.
+* Nếu số điện thoại chưa được đăng ký trước, ứng dụng xác thực mã OTP đúng, yêu cầu người dùng điền thông tin về họ tên, mật khẩu. Sau đó xác nhận đăng ký thành công.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+![tripsviet](https://i.ibb.co/Rc1fkw2/4.jpg)
+    
+    Tương tự như chức năng đăng ký tài khoản:
+*	Nếu số điện thoại được đăng ký trước, ứng dụng xác thực mã OTP đúng, yêu cầu người dùng nhập lại mật khẩu mới. Sau đó xác nhận thành công.
+*	Nếu số điện thoại đã chưa được đăng ký trước đó, ứng dụng cho phép người dùng đi đến chức năng đăng ký tài khoản hoặc trở về trang đăng nhập.
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+![tripsviet](https://i.ibb.co/rpH8H9v/6.jpg)
 
-## Tech
+    Ở màn hình này, người dùng có thể xem danh sách các bài viết đã được quản trị viên xét duyệt, mặc định ở phần “Dành cho bạn”. Ở phần “Đang theo dõi” là bài viết của những người dùng khác mà họ đã theo dõi.
+    Ngoài ra, ứng dụng hỗ trợ người dùng tìm kiếm những bài viết theo tên địa điểm…
+    
+![tripsviet](https://i.ibb.co/rpH8H9v/6.jpg)
+    
+    Ứng dụng cho phép người dùng tìm kiếm gần đúng hoặc đúng với từ khóa do người dùng 
+    nhập vào. Ứng dụng sẽ hỗ trợ hiện thị những địa điểm gợi ý trong lúc người dùng nhập
+    dữ liệu để tìm kiếm vào.
 
-Dillinger uses a number of open source projects to work properly:
+![tripsviet](https://i.ibb.co/7GgQGnS/7.jpg)
+    
+    Ở chức năng này, người dùng có thể xem được chi tiết bài viết, thu phóng hình ảnh bài viết, truy cập đến trang cá nhân của người khác, thả tim, bình luận hoặc
+    xem được thông tin tất cả các bình luận trên bài viết
+    
+![tripsviet](https://i.ibb.co/TktvGkT/8.jpg)
 
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
+    Ở giao diện này, người dùng có thể theo dõi/ hủy theo dõi người dùng khác, xem thông 
+    tin giới thiệu, ảnh đại diện, ảnh bìa,… Cùng với đó là danh sách các bài viết của họ.
+    
+![tripsviet](https://i.ibb.co/DRvy0d3/9.jpg)
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+    Ở giao diện Khám phá, ứng dụng cung cấp danh sách 63 tỉnh thành Việt Nam được chia thành các vùng miền để thuận tiện cho việc tìm kiếm. 
+    Còn ở chức năng Thêm bài viết, ứng dụng yêu cầu người dùng cung cấp thông tin về 
+    địa điểm đó như Tên địa điểm, địa chỉ, mô tả cũng như cảm nhận của người dùng 
+    về địa điểm du lịch đó…
+    Ngoài ra, ứng dụng cho phép người dùng định vị địa điểm của địa điểm đó trên bản đồ
+    , cùng với đánh giá theo thang điểm 5 tương ứng với mô tả. Sau cùng, ứng dụng bắt buộc cung cấp ít nhất 4 hình ảnh về địa điểm, để tiến hành đăng bài viết.
 
-## Installation
+![tripsviet](https://i.ibb.co/PFz8pSy/10.jpg)
+    
+    Ở giao diện Khám phá, khi người dùng nhấn vào một tỉnh thành nào đó, ứng dụng sẽ 
+    cung cấp thông tin về tỉnh thành. Ví dụ, vị trí địa lý, diện tích, dân số, biển số xe phương tiện. Bên cạnh đó, ứng dụng gợi ý thêm các địa điểm tham quan nổi tiếng,
+    cũng như món ăn đặc sản hấp dẫn du khách, được đội ngũ quản trị viên tìm hiểu,
+    cập nhật thường xuyên,..Cuối cùng, là danh sách tất cả các bài viết ở địa phương đó
+    , cập nhật từ những người dùng khác.
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+![tripsviet](https://i.ibb.co/XzfqDJ9/11.jpg)
 
-Install the dependencies and devDependencies and start the server.
+    Ở chức năng Xung quanh, ứng dụng sử dụng vị trí hiện tại của người dùng. Từ đó đưa ra các gợi ý gần cho người dùng, ví dụ như các địa điểm tham quan, ăn uống,
+    hay giải trí,…được lấy từ thông tin các bài viết của người dùng, cùng với sự tìm kiếm của những quản trị viên ứng dụng, 
+    để cung cấp cho người dùng những thông tin hữu ích nhất.
+    
+![tripsviet](https://i.ibb.co/Bncd0qR/12.jpg)
 
-```sh
-cd dillinger
-npm i
-node app
-```
+    Ở giao diện này, hệ thống cung cấp cho người dùng, những bài viết, bài báo về Du lịch, được cập nhật hằng ngày. Một chức năng khá hữu ích cho những tín đồ đam mê về du lịch, cung cấp thông tin hay ho về nền du lịch nước nhà nói riêng
+    và du lịch thế giới nói chung.
+    
+![tripsviet](https://i.ibb.co/SsLbph9/13.jpg)
 
-For production environments...
+    Ở chức năng này, ứng dụng cho phép người dùng:
+*	Cập nhật thông tin
+*	Xem được những Bài viết chưa duyệt
+*	Thanh toán, đổi điểm từ việc đăng bài viết
+*	Đánh giá sản phẩm
+*	Cũng như tìm kiếm sự trợ giúp từ ứng ụng.
 
-```sh
-npm install --production
-NODE_ENV=production node app
-```
+![tripsviet](https://i.ibb.co/TPBXmxK/14.jpg)
 
-## Plugins
+    Chức năng cho phép người dùng thay đổi các thông tin của cá nhân như Ảnh đại diện, Ảnh bìa, Họ và tên, Ngày tháng năm sinh, Giới tính, Email, Quê Quán, Tiểu sử…Sau khi điền đầy đủ các thông tin, nhấn Xác nhận để hoàn thành thao tác.
+    
+ ![tripsviet](https://i.ibb.co/L8KgYVy/15.jpg)   
+ 
+    Ở chức năng này, người dùng được xem lại bài chưa được quản trị viên duyệt sau khi
+    đăng bài thành công. Những bài viết chưa duyệt sẽ tạm thời chưa xuất hiện trên công động, cũng như trong trang cá nhân của người dùng.
+    
+![tripsviet](https://i.ibb.co/9h4BpYF/16.jpg)
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
+    Chức năng đánh giá ứng dụng
+    
+![tripsviet](https://i.ibb.co/jbCKbh6/17.jpg)
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+    Chức năng cho phép người dùng có thể tùy chọn giao diện sáng hoặc tối để phù hợp với nhu cầu, môi trường sử dụng của người dùng. Đồng thời, đi kèm hai ngôn ngữ, để ứng dụng hướng đến đối tượng không chỉ người Việt Nam sử dụng. Ngoài ra còn có chức năng Đổi mật khẩu, yêu cầu người dùng nhập mật khẩu cũ và mật khẩu mới để tiến hành xác nhận thao tác.
+    
+![tripsviet](https://i.ibb.co/kyLkxm3/18.jpg)
 
-## Development
+# TripsViet - Ứng dụng review du lịch Việt Nam
 
-Want to contribute? Great!
 
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
+    
+    
+    
 
-Open your favorite Terminal and run these commands.
 
-First Tab:
 
-```sh
-node app
-```
-
-Second Tab:
-
-```sh
-gulp watch
-```
-
-(optional) Third:
-
-```sh
-karma test
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
-```
-
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
-
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
-```
-
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-## License
-
-MIT
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+    
