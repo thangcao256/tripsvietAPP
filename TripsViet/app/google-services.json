@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "726296769653",
+    "project_id": "tripsviet",
+    "storage_bucket": "tripsviet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726296769653:android:bb9bcc1efde2527540343c",
+        "android_client_info": {
+          "package_name": "com.thangcao.tripsviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726296769653-cm802p1l6k5cqrgmft336qcbjvgn7m7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thangcao.tripsviet",
+            "certificate_hash": "8c4b283ed4ef126409c9054e995b09d6dc374a54"
+          }
+        },
+        {
+          "client_id": "726296769653-cr4qchikkjo9k9f153gr5k6vkp11r1p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbdVhRarM5FwjuAVec83isZenH0xmSTTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726296769653-cr4qchikkjo9k9f153gr5k6vkp11r1p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/drawable/ic_bookmark.xml" value="0.26875" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/drawable/icon_bookmark.xml" value="0.26875" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/drawable/icon_minimize.xml" value="0.26875" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/drawable/icon_notifications_purple.xml" value="0.26875" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_info_by_province.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_list_post_by_province.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_login.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_main.xml" value="0.24361593462717057" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_personal_info.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_personal_other_info.xml" value="0.25" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_post.xml" value="0.3738244514106583" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_post_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_recommend_visit.xml" value="0.25" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_register.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_register_info.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_reset_password.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_reset_phone.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_select.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_unapproved_posts.xml" value="0.25" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/activity_update_information.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/dong_listview_bai_viet.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/dong_listview_ngang_hinhanh.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/dong_listview_ngang_tinh.xml" value="0.25" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/dong_listview_tinh.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/dong_listview_tintuc.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_add.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_here.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_home.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_maps.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_notify.xml" value="0.2484375" />
+        <entry key="..\:/Users/Thang Cao/Desktop/TripsViet/app/src/main/res/layout/fragment_personal.xml" value="0.2484375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
